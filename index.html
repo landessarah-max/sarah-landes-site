@@ -20,8 +20,10 @@
       .hero-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43,46,131,.1), rgba(236,108,107,.08)); pointer-events: none; }
       .section-heading { align-items: start; }
       .service-summary > p { max-width: 440px; margin: 0; font-size: 17px; }
-      .service-image { width: 100%; height: 310px; overflow: hidden; margin: 0; }
-      .service-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+      .service-logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; align-content: start; }
+      .logo-tile { background: #fff; border-radius: 10px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 14px; }
+      .logo-tile img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
+      @media (max-width: 760px) { .service-logos { grid-template-columns: repeat(4, 1fr); margin-top: 28px; } }
     </style>
   </head>
   <body>
@@ -66,7 +68,19 @@
             <p class="eyebrow">Ce que nous pouvons faire ensemble</p>
             <p>Une intervention à la juste mesure de votre organisation : ponctuelle, structurante ou au plus près des équipes.</p>
           </div>
-          <figure class="service-image"><img src="avion-papier-pixabay.png" alt="Un avion en papier qui prend son envol dans le ciel" /></figure>
+          <div class="service-logos" aria-label="Références et interventions">
+            <div class="logo-tile"><img src="tbs.png" alt="TBS Education" /></div>
+            <div class="logo-tile"><img src="euridis.jpg" alt="Euridis Business School" /></div>
+            <div class="logo-tile"><img src="amos.png" alt="AMOS Sport Business School" /></div>
+            <div class="logo-tile"><img src="esp.png" alt="ESP École Supérieure de Publicité" /></div>
+            <div class="logo-tile"><img src="iso.png" alt="ISO Institut Supérieur d'Optique" /></div>
+            <div class="logo-tile"><img src="one-business-school.png" alt="One Business School" /></div>
+            <div class="logo-tile"><img src="terrade.png" alt="École Terrade" /></div>
+            <div class="logo-tile"><img src="digital-learning-contest.jpg" alt="Digital Learning Contest" /></div>
+            <div class="logo-tile"><img src="patrimcity.png" alt="Patrimcity" /></div>
+            <div class="logo-tile"><img src="urbat.webp" alt="Urbat" /></div>
+            <div class="logo-tile"><img src="onlymo.png" alt="Only'mo" /></div>
+          </div>
         </div>
         <div class="service-list">
           <article class="service-item">
