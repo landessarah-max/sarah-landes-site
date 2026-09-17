@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sarah Landes — conseil commercial et marketing, formation et coaching." />
+    <title>Sarah Landes — Conseil commercial & marketing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @media (max-width: 760px) {
+        .about { grid-template-columns: 1fr; }
+        .portrait-wrap { min-height: 520px; }
+        .about-copy { padding-top: 60px; }
+      }
+      .hero-art { background: #1d777b; }
+      .hero-image { display: block; width: 100%; height: 100%; position: absolute; inset: 0; object-fit: cover; object-position: center; filter: saturate(.9) contrast(1.08); }
+      .hero-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43,46,131,.1), rgba(236,108,107,.08)); pointer-events: none; }
+      .section-heading { align-items: start; }
+      .service-summary > p { max-width: 440px; margin: 0; font-size: 17px; }
+      .service-image { width: 100%; height: 310px; overflow: hidden; margin: 0; }
+      .service-image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 60%; }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#accueil" aria-label="Sarah Landes, accueil">Sarah <em>Landes</em></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span class="sr-only">Ouvrir le menu</span></button>
+      <nav id="navigation" class="navigation" aria-label="Navigation principale">
+        <a href="#approche">L'approche</a>
+        <a href="#expertises">Expertises</a>
+        <a href="#methode">Méthode</a>
+        <a class="nav-cta" href="#contact">Échangeons</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Conseil commercial & marketing</p>
+          <h1>Oeuvrez pour la <em>stratégie</em><br />Gagnez en <em>performance</em>.</h1>
+          <p class="hero-intro">Nous accompagnons les dirigeant·es et leurs équipes à clarifier leur stratégie commerciale, faire les bons choix et transformer l'énergie en résultats durables.</p>
+          <a class="button button-light" href="#contact">Parler de votre projet <span>↗</span></a>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-image" src="origami-sky-v2.jpg" alt="" />
+        </div>
+      </section>
+
+      <section class="intro-band" id="approche">
+        <p class="eyebrow ink">Là où tout commence</p>
+        <div class="intro-layout">
+          <h2>Votre commercial ne doit plus être une affaire de <em>hasard.</em></h2>
+          <div>
+            <p>Quand l’activité s’accélère — ou ralentit — il faut plus qu’une bonne intuition. Il faut un cap clair, des outils qui servent vraiment et des équipes qui savent où concentrer leurs efforts.</p>
+            <a class="text-link" href="#methode">Découvrir notre méthode <span>→</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="expertises" class="services">
+        <div class="section-heading">
+          <div class="service-copy">
+            <p class="eyebrow">Ce que nous pouvons faire ensemble</p>
+            <p>Une intervention à la juste mesure de votre organisation : ponctuelle, structurante ou au plus près des équipes.</p>
+          </div>
+          <figure class="service-image"><img src="avion-papier-pixabay.png" alt="Un avion en papier qui prend son envol dans le ciel" /></figure>
+        </div>
+        <div class="service-list">
+          <article class="service-item">
+            <span class="number">01</span>
+            <div><h3>Conseil en stratégie<br /><em>commerciale</em></h3><p>Poser le diagnostic, faire les choix et construire une feuille de route qui relie ambition, marché et exécution.</p></div>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-item">
+            <span class="number">02</span>
+            <div><h3>Marketing<br /><em>stratégique</em></h3><p>Préciser le positionnement, les cibles et le message pour devenir le choix évident de vos futurs clients.</p></div>
+            <span class="arrow">↗</span>
+          </article>
+          <article class="service-item">
+            <span class="number">03</span>
+            <div><h3>Formation &amp;<br /><em>coaching commercial</em></h3><p>Faire grandir les compétences par la pratique, avec des déclics immédiatement utilisables sur le terrain.</p></div>
+            <span class="arrow">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="proofs" aria-label="Quelques repères">
+        <div><strong>18</strong><span>ans d'expérience<br />au service du développement</span></div>
+        <div><strong>98%</strong><span>de taux de<br />satisfaction</span></div>
+        <div><strong>360°</strong><span>de la stratégie<br />à l'appropriation</span></div>
+      </section>
+
+      <section id="methode" class="method">
+        <div class="method-top">
+          <p class="eyebrow ink">La méthode</p>
+          <h2>Une stratégie vivante<br />se construit à <em>quatre mains.</em></h2>
+        </div>
+        <div class="method-steps">
+          <article><span>01</span><h3>Comprendre</h3><p>Un audit franc de l’existant : activité, équipe, processus et opportunités.</p></article>
+          <article><span>02</span><h3>Choisir</h3><p>Les priorités qui font réellement la différence, sans se disperser.</p></article>
+          <article><span>03</span><h3>Activer</h3><p>Des actions concrètes, des outils simples et un cadre partagé.</p></article>
+          <article><span>04</span><h3>Ancrer</h3><p>Du coaching et du suivi pour faire durer les bonnes pratiques.</p></article>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="portrait-wrap">
+          <img src="sarah-landes.jpg" alt="Portrait de Sarah Landes, membre de l'équipe" />
+          <span>Sarah Landes<br />Conseil &amp; formation</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow ink">L'équipe</p>
+          <h2>Du recul,<br />de l’<em>exigence</em><br />et du concret.</h2>
+          <p>L’équipe Sarah Landes Conseil &amp; Formation ne se contente pas de vous livrer une recommandation de plus. Elle vous aide à choisir, à avancer avec vos équipes et à créer les conditions d’une performance commerciale durable.</p>
+          <p>Avec 18 ans d’expérience, elle associe conseil, formation et coaching pour rester au plus près de la réalité du terrain.</p>
+          <a class="text-link" href="#contact">Faire connaissance <span>→</span></a>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <p class="quote-mark">“</p>
+        <blockquote>La bonne stratégie est celle que vos équipes peuvent comprendre, porter et faire vivre dès demain.</blockquote>
+      </section>
+
+      <section id="contact" class="contact">
+        <div>
+          <p class="eyebrow">Premier échange</p>
+          <h2>Et si nous faisions<br />le point <em>ensemble ?</em></h2>
+          <p class="contact-copy">Parlez-nous de votre contexte, de votre équipe et de ce que vous aimeriez voir bouger. Nous vous répondons sous 48 heures.</p>
+        </div>
+        <form class="contact-form" action="mailto:landes.sarah@gmail.com" method="post" enctype="text/plain">
+          <label>Votre nom<input name="nom" type="text" placeholder="Prénom et nom" required /></label>
+          <label>Votre e-mail<input name="email" type="email" placeholder="nom@entreprise.fr" required /></label>
+          <label>Votre message<textarea name="message" rows="3" placeholder="De quoi aimeriez-vous parler ?" required></textarea></label>
+          <button class="button button-coral" type="submit">Envoyer votre demande <span>↗</span></button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#accueil">Sarah <em>Landes</em></a>
+      <div><a href="mailto:landes.sarah@gmail.com">landes.sarah@gmail.com</a><a href="tel:+33762219960">07 62 21 99 60</a></div>
+      <p>© <span id="year"></span> Sarah Landes. Conseil commercial & marketing.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
