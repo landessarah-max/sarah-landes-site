@@ -20,6 +20,16 @@
       .hero-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(43,46,131,.1), rgba(236,108,107,.08)); pointer-events: none; }
       .section-heading { align-items: start; }
       .service-summary > p { max-width: 440px; margin: 0; font-size: 17px; }
+      .service-copy h2 {
+        font-family: "Playfair Display", Georgia, serif;
+        font-size: clamp(46px, 5.2vw, 78px);
+        line-height: .98;
+        font-weight: 500;
+        letter-spacing: -.055em;
+        color: var(--ink);
+        margin: 16px 0 0;
+        max-width: 480px;
+      }
       .service-logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; align-content: start; }
       .logo-tile { background: #fff; border-radius: 10px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 14px; }
       .logo-tile img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
@@ -66,6 +76,7 @@
         <div class="section-heading">
           <div class="service-copy">
             <p class="eyebrow">Ils nous ont fait confiance</p>
+            <h2>Un accompagnement à la carte de nos clients PME et école</h2>
           </div>
           <div class="service-logos" aria-label="Références et interventions">
             <div class="logo-tile"><img src="tbs.png" alt="TBS Education" /></div>
