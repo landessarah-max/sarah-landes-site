@@ -22,6 +22,9 @@
       .service-summary > p { max-width: 440px; margin: 0; font-size: 17px; }
       .site-header .brand img { display: block; height: 34px; width: auto; }
       footer .brand img { display: block; height: 24px; width: auto; }
+      .form-status { margin: 14px 0 0; font-size: 13px; min-height: 16px; color: #fff; }
+      .form-status.error { color: var(--coral); }
+      .contact-form button[disabled] { opacity: .6; cursor: wait; }
       .service-copy h2 {
         font-family: "Playfair Display", Georgia, serif;
         font-size: clamp(46px, 5.2vw, 78px);
@@ -158,11 +161,15 @@
           <h2>Et si nous faisions<br />le point <em>ensemble ?</em></h2>
           <p class="contact-copy">Parlez-nous de votre contexte, de votre équipe et de ce que vous aimeriez voir bouger. Nous vous répondons sous 48 heures.</p>
         </div>
-        <form class="contact-form" action="mailto:contact.sinoes@gmail.com" method="post" enctype="text/plain">
+        <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/contact.sinoes@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message depuis le site SINOES" />
+          <input type="hidden" name="_template" value="table" />
           <label>Votre nom<input name="nom" type="text" placeholder="Prénom et nom" required /></label>
           <label>Votre e-mail<input name="email" type="email" placeholder="nom@entreprise.fr" required /></label>
+          <label>Votre téléphone<input name="telephone" type="tel" placeholder="06 12 34 56 78" required /></label>
           <label>Votre message<textarea name="message" rows="3" placeholder="De quoi aimeriez-vous parler ?" required></textarea></label>
           <button class="button button-coral" type="submit">Envoyer votre demande <span>↗</span></button>
+          <p class="form-status" aria-live="polite"></p>
         </form>
       </section>
     </main>

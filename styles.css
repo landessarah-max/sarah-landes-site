@@ -1,4 +1,4 @@
-:root { --ink:#2b2e83; --coral:#ec6c6b; --paper:#ffffff; --dark:#222663; --muted:#cbcbe0; --body:#35364d; }
+:root { --ink:#082857; --coral:#ec6c6b; --paper:#ffffff; --dark:#082857; --muted:#cbcbe0; --body:#35364d; }
 * { box-sizing:border-box; }
 html { scroll-behavior:smooth; }
 body { margin:0; color:var(--body); background:var(--paper); font-family:"DM Sans", Arial, sans-serif; font-size:16px; line-height:1.5; }
