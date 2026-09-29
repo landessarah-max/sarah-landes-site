@@ -21,6 +21,7 @@
       .section-heading { align-items: start; }
       .service-summary > p { max-width: 440px; margin: 0; font-size: 17px; }
       .site-header .brand img { display: block; height: 34px; width: auto; }
+      footer .brand img { display: block; height: 24px; width: auto; }
       .service-copy h2 {
         font-family: "Playfair Display", Georgia, serif;
         font-size: clamp(46px, 5.2vw, 78px);
@@ -31,10 +32,10 @@
         margin: 16px 0 0;
         max-width: 480px;
       }
-      .service-logos { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; align-content: start; }
+      .service-logos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; align-content: start; }
       .logo-tile { background: #fff; border-radius: 10px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 14px; }
       .logo-tile img { display: block; max-width: 100%; max-height: 100%; object-fit: contain; }
-      @media (max-width: 760px) { .service-logos { grid-template-columns: repeat(4, 1fr); margin-top: 28px; } }
+      @media (max-width: 760px) { .service-logos { grid-template-columns: repeat(2, 1fr); margin-top: 28px; } }
     </style>
   </head>
   <body>
@@ -91,6 +92,7 @@
             <div class="logo-tile"><img src="patrimcity.png" alt="Patrimcity" /></div>
             <div class="logo-tile"><img src="urbat.webp" alt="Urbat" /></div>
             <div class="logo-tile"><img src="onlymo.png" alt="Only'mo" /></div>
+            <div class="logo-tile"><img src="mcouat.png" alt="Mc Ouat Partnership" /></div>
           </div>
         </div>
         <div class="service-list">
@@ -166,7 +168,7 @@
     </main>
 
     <footer>
-      <a class="brand" href="#accueil">SINOES</a>
+      <a class="brand" href="#accueil"><img src="sinoes-logo.png" alt="SINOES" /></a>
       <div><a href="mailto:contact@sinoes.fr">contact@sinoes.fr</a><a href="tel:+33762219960">07 62 21 99 60</a></div>
       <p>© <span id="year"></span> SINOES. Conseil commercial & marketing.</p>
     </footer>
