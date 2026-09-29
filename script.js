@@ -32,7 +32,7 @@ contactForm?.addEventListener('submit', async (event) => {
 
     if (!response.ok) throw new Error('Envoi impossible');
 
-    formStatus.textContent = 'Merci, votre message a bien été envoyé. Nous vous répondons sous 48 heures.';
+    formStatus.textContent = 'Message envoyé. Votre demande sera traitée sous 48h. — L\'équipe SINOES';
     contactForm.reset();
   } catch (error) {
     formStatus.classList.add('error');
