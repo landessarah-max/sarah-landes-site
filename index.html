@@ -35,11 +35,6 @@
         margin: 16px 0 0;
         max-width: 480px;
       }
-      .ai-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; margin-top: 70px; padding-top: 34px; border-top: 1px solid #aaaabc; }
-      .ai-stats strong { display: block; color: var(--coral); font: clamp(44px, 5vw, 72px)/.95 "Playfair Display", Georgia, serif; letter-spacing: -.05em; font-weight: 500; }
-      .ai-stats p { margin: 14px 0 0; max-width: 380px; font-size: 15px; }
-      .ai-stats small { display: block; margin-top: 10px; font: 11px/1.5 "DM Mono", monospace; letter-spacing: .04em; color: #777899; }
-      @media (max-width: 760px) { .ai-stats { grid-template-columns: 1fr; gap: 32px; margin-top: 50px; } }
       .values { padding: clamp(78px, 10vw, 145px) clamp(24px, 8vw, 125px); background: var(--paper); }
       .values h2 { color: var(--ink); font-family: "Playfair Display", Georgia, serif; font-size: clamp(46px, 5.5vw, 82px); font-weight: 500; letter-spacing: -.055em; margin: 0; line-height: .98; }
       .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; margin-top: 80px; border-top: 1px solid #aaaabc; }
@@ -52,6 +47,7 @@
         .value-item { border-right: 0; border-bottom: 1px solid #aaaabc; padding: 0 0 28px; }
         .value-item:last-child { border-bottom: 0; padding-bottom: 0; }
       }
+      .proofs small { display: block; margin-top: 10px; font: 11px/1.5 "DM Mono", monospace; letter-spacing: .04em; color: #b5b6d2; }
       .service-logos { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; align-content: start; }
       .logo-tile { background: #fff; border-radius: 10px; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; padding: 2px; transition: transform .25s ease, box-shadow .25s ease; }
       .logo-tile:hover, .logo-tile:focus-within { transform: translateY(-6px) scale(1.05); box-shadow: 0 16px 32px rgba(8,40,87,.28); }
@@ -138,9 +134,9 @@
       </section>
 
       <section class="proofs" aria-label="Quelques repères">
-        <div><strong>20</strong><span>ans d'expérience<br />au service du développement</span></div>
+        <div><strong>5 h</strong><span>gagnées par semaine en moyenne<br />sur la productivité individuelle<small>Source : Bpifrance Le Big Média et France Num</small></span></div>
         <div><strong>&gt;300</strong><span>personnes<br />accompagnées</span></div>
-        <div><strong>360°</strong><span>de la stratégie<br />à l'appropriation</span></div>
+        <div><strong>+76 %</strong><span>de précision dans les réponses clients,<br />leads priorisés et assistants virtuels<small>Source : Bpifrance Conseil et France Num</small></span></div>
       </section>
 
       <section id="methode" class="method">
@@ -153,10 +149,6 @@
           <article><span>02</span><h3>Choisir</h3><p>Les priorités qui font réellement la différence, sans se disperser.</p></article>
           <article><span>03</span><h3>Activer</h3><p>Des actions concrètes, des outils simples, dont l'IA, et un cadre partagé.</p></article>
           <article><span>04</span><h3>Ancrer</h3><p>Du coaching, du suivi et la mesure des gains pour faire durer les bonnes pratiques.</p></article>
-        </div>
-        <div class="ai-stats">
-          <div><strong>5 h</strong><p>gagnées par semaine en moyenne sur la productivité individuelle grâce à l'IA.</p><small>Source : Bpifrance Le Big Média et France Num</small></div>
-          <div><strong>+76 %</strong><p>de précision dans les réponses clients, avec priorisation des leads et assistants virtuels.</p><small>Source : Bpifrance Conseil et France Num</small></div>
         </div>
       </section>
 
